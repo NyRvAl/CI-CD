@@ -24,7 +24,7 @@ jobs:
         with:
           dotnet-version: ${{env.DOTNET_VERSION}}
       - name: Restore Dependencies
-        run: dotnet restore CI-CD
+        run: dotnet restore CI-CD.sln
 
       - name: Build App
         run: dotnet build -c Release --no-restore CI-CD.sln
